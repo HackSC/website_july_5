@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #000000;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.track {
+  height: 50vh;
+  float: left;
+}
+
+.track h1 {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 50px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.splash {
+  height: 100vh;
+  width: 100%;
+  background: yellow; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, yellow, red); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, yellow, red); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, yellow, red); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, yellow, red); /* Standard syntax */
+}
+
+.splash h3 {
+  text-align: center;
+  margin-left: 75px;
+  margin-right: 75px;
+  color: white;
+}
+
+.splash-logo {
+  width: 75%;
+  vertical-align: middle;
+  display: block;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .splash-logo {
+    width: 50%;
+    vertical-align: middle;
+    display: block;
+    margin: auto;
+  }
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/
