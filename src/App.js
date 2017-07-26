@@ -26,7 +26,7 @@ class Splash extends Component {
       <div className="splash">
         <h1>splash</h1>
         <img src={logo} className="splash-logo"/>
-        <h3>Welcome to THE BEST HACKATHON IN THE WORLD. coming september 2017.</h3>
+        <h3>Welcome to Los Angeles, the warm and beautiful city of angels and dreamers. On the University of Southern California campus this fall, you are invited to a 36 hour technology hackathon that seeks to change the future of our beloved city. Alongside 1,000 hackers and designers, you will re-imagine what a 21st century city should look like and apply your ideas to the test. We hope you will join us. —HackSC Team</h3>
       </div>
     )
   }
