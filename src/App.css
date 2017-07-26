@@ -19,6 +19,11 @@
   color: white;
 }
 
+.seperator {
+  background-color: white;
+  height: 0.5vh;
+}
+
 .track {
   height: 50vh;
   float: left;
@@ -27,7 +32,13 @@
 .track h1 {
   padding-top: 10px;
   padding-left: 20px;
-  font-size: 50px;
+  font-size: 30px;
+}
+
+.track p {
+  margin: 15px;
+  font-size: 19px;
+
 }
 
 .App-intro {
