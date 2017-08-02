@@ -46,35 +46,160 @@
 }
 
 .splash {
-  height: 100vh;
-  width: 100%;
-  background: yellow; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, yellow, red); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, yellow, red); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, yellow, red); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, yellow, red); /* Standard syntax */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: black;
+  background-image: url('starbackground.jpg');
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: block;
+  float: left;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
-.splash h3 {
-  text-align: center;
-  margin-left: 75px;
-  margin-right: 75px;
+.splash-content {
   color: white;
+  font-size: 12px;
+  width: 80%;
+  float: center;
+  margin: 0 auto;
+  pointer-events: none;
+  font-weight: normal;
+  padding-bottom: 200px;
 }
 
 .splash-logo {
-  width: 75%;
-  vertical-align: middle;
-  display: block;
-  margin: auto;
+  padding-top: 20vh;
+  width: 100%;
+  height: 400px;
+  float: left;
+  background-image: url('hacksclogo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.apply {
+  width: 175px;
+  height: 60px;
+  background-color: yellow;
+  font-family: 'Space Mono', Monaco, Consolas, Courier-New, monospace;
+  font-weight: bold;
+  font-size: 24px;
+  pointer-events: auto;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+
+button.apply:hover {
+  background-color: white;
+  border-color: yellow;
+}
+
+.sponsor {
+  width: 175px;
+  height: 60px;
+  background-color: transparent;
+  font-family: 'Space Mono', Monaco, Consolas, Courier-New, monospace;
+  font-weight: bold;
+  font-size: 24px;
+  pointer-events: auto;
+  border-style: none;
+  border-width: 0px;
+  color: white;
+}
+
+button.sponsor:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
   .splash-logo {
-    width: 50%;
-    vertical-align: middle;
-    display: block;
-    margin: auto;
+  margin-top: 10vh;
+  margin-left: 70px;
+  width: 40%;
+  height: 400px;
+  float: left;
+  background-image: url('hacksclogovertical.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  }
+
+  .splash-content {
+  color: white;
+  padding-top: 20vh;
+  font-size: 14px;
+  width: 40%;
+  float: left;
+  pointer-events: none;
+  font-weight: normal;
+  }
+
+  .la-sky {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-image: url('laskyline.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .splash-logo {
+  margin-top: 10vh;
+  width: 40%;
+  height: 400px;
+  float: left;
+  background-image: url('hacksclogovertical.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  }
+
+  .splash-content {
+  color: white;
+  padding-top: 20vh;
+  font-size: 14px;
+  width: 35%;
+  float: left;
+  pointer-events: none;
+  font-weight: normal;
+  }
+
+  .la-sky {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20vh;
+  opacity: 0.5;
+  background-image: url('laskyline.png');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  }
+
+  .la-moon {
+  position: absolute;
+  bottom: 40vh;
+  left: 40vw;
+  width: 100%;
+  height: 150px;
+  opacity: 0.5;
+  background-image: url('lamoon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
   }
 }
 

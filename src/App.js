@@ -24,9 +24,24 @@ class Splash extends Component {
   render() {
     return (
       <div className="splash">
-        <h1>splash</h1>
-        <img src={logo} className="splash-logo"/>
-        <h3>Welcome to Los Angeles, the warm and beautiful city of angels and dreamers. On the University of Southern California campus this fall, you are invited to a 36 hour technology hackathon that seeks to change the future of our beloved city. Alongside 1,000 hackers and designers, you will re-imagine what a 21st century city should look like and apply your ideas to the test. We hope you will join us. —HackSC Team</h3>
+        <div className="splash-logo"></div>
+        <div className="splash-content"><h3> Welcome to Los Angeles, the warm and beautiful city of angels and dreamers. 
+        On the University of Southern California campus this fall, you are invited to a 36 hour 
+        technology hackathon that seeks to change the future of our beloved city. Alongside 1,000 
+        hackers and designers, you will re-imagine what a 21st century city should look like and 
+        apply your ideas to the test. <br/> <br/>
+
+        We hope you will join us. <br/> <br/>
+
+        —HackSC Team
+
+        <br/> <br/>
+        </h3>
+        <a href="http://www.google.com"><button type="button" className="apply"> APPLY NOW </button></a>
+        <a href="http://www.google.com"><button type="button" className="sponsor"> SPONSOR </button></a>
+        </div>
+        <div className="la-sky"></div>
+        <div className="la-moon"></div>
       </div>
     )
   }
