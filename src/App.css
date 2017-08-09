@@ -184,6 +184,7 @@ button.sponsor:hover {
 
 .sponsors {
   padding-top: 2em;
+  padding-bottom: 2em;
   position: relative;
   display: flex;
   flex-direction: column;
